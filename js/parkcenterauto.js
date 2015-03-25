@@ -12,8 +12,9 @@
 //});
 $(window).load(function() {
     $('#masonryContainer').masonry({
-        columnWidth: 170,
-        itemSelector: '.item'
+        columnWidth: 190,
+        itemSelector: '.item',
+        isFitWidth: true
     }).imagesLoaded(function() {
         $('masonryContainer').masonry('reload');
     });
